@@ -5,6 +5,10 @@
   --muted: #b9c6e8;
   --accent: #8b5cf6;
   --accent-2: #06b6d4;
+  --badge-color: #c4b5fd;
+  --focus-color: #a5b4fc;
+  --card-bg: #1b253c;
+  --border-color: #ffffff26;
 }
 
 * {
@@ -29,7 +33,7 @@ body {
 }
 
 .badge {
-  color: #c4b5fd;
+  color: var(--badge-color);
   margin: 0 0 0.75rem;
 }
 
@@ -57,7 +61,7 @@ button {
 }
 
 button:focus-visible {
-  outline: 3px solid #a5b4fc;
+  outline: 3px solid var(--focus-color);
   outline-offset: 2px;
 }
 
@@ -71,8 +75,8 @@ button:focus-visible {
 }
 
 .card {
-  background: #1b253c;
-  border: 1px solid #ffffff26;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 1rem;
   padding: 1.1rem;
   transition: transform 180ms ease;
